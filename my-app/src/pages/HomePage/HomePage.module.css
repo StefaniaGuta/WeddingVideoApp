@@ -1,0 +1,229 @@
+.mainSection{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  font-family: sans-serif;
+  gap: 150px;
+}
+
+.coverImage{
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  z-index: 0;
+}
+
+.commingSoonSection{
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comingText{
+  width: 250px;
+  border-bottom: 1px solid var(--font-SecondColor);
+  text-align: center;
+}
+
+.countdown{
+  width: 530px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.countdown li {
+  width: 62px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.countdown p {
+  width: 60px;
+  height: 71px;
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+  font-family: 'Dancing Script';
+}
+
+.handsRings {
+  height: 412px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.loveStorySection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+}
+
+.loveStorySection::before {
+  content: "";
+  position: absolute;
+  top: 120px;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: var(--font-SecondColor); 
+  transform: translateX(-50%);
+}
+
+.loveStoryTitleSection,
+.aboutSectionTitle{
+  font-family: var(--font-family);
+  font-size: 48px;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.storyImgs{
+  width: 240px;
+  border-radius: 100%;
+  height: 240px;
+  object-fit: cover;
+  border: 2px solid var(--font-SecondColor);
+  padding: 5px;
+  z-index: 1111;
+  background-color: white;
+}
+
+.storyMoments {
+  display: flex;
+  width: 750px;
+  height: 270px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.storyMoments::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background: var(--font-SecondColor);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.storyMoments::after{
+  content: "";
+  position: absolute;
+  bottom: -74px;
+  border: solid 2px var(--font-SecondColor);
+  width: 36%;
+  height: 220px;
+  border-radius: 50%;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  z-index: 0;
+  left: 14%;
+  rotate: -10deg;
+}
+
+.storyMoments:nth-child(2n)::after{
+left: 50%;
+rotate: 11deg;
+}
+
+.storyMoments:not(:last-child)::before {
+  bottom: -80px;
+}
+
+.storyMoments:last-child::before{
+  bottom: -10px;
+}
+
+.momentTilte,
+.aboutUsContainer h3{
+  font-family: var(--font-family);
+  margin: 0 0 10px 0;
+  font-size: 32px;
+  width: 240px;
+  height: 48px;
+}
+
+.storyMoments:not(:last-child){
+  margin-bottom: 70px;
+}
+
+.storyMoments p {
+  width: 315px;
+  font-size: 12px;
+  margin: 0;
+}
+
+.aboutUsSection{
+  width: 100vw;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUsSection img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.aboutUsContainer {
+  width: 703px;
+  height: 703px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3px;
+  padding: 3px;
+  background-color: var(--font-SecondColor);
+}
+
+.aboutUsContainer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  background-color: white;
+}
+
+.aboutUsSection p{
+  width: 272px;
+  font-size: 10px;
+  margin: 0;
+}
+
+.footerImg{
+  display: block;
+  width: 100vw;
+  height: 250px;
+  object-fit: cover;
+  object-position: bottom;
+  filter: blur(2px);
+}
+
+@media screen and (min-width: 768px) {
+  
+}

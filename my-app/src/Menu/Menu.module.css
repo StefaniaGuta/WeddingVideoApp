@@ -1,0 +1,87 @@
+.menuButton {
+  display: block;
+  background: none;
+  cursor: pointer;
+  border: none;
+  z-index: 11111111;
+}
+
+.menuButton svg{
+  fill: var(--font-SecondColor);
+}
+
+.nav {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: 999;
+  align-items: center;
+  padding-top: 80px;
+  overflow: hidden;
+  animation: moveBackground 60s infinite alternate ease-in-out;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: top;
+  }
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+
+.nav.open {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 0;
+  list-style-type:none;
+}
+
+.link button {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--font-SecondColor);
+  background-color: transparent;
+  border: none;
+  width: 250px;
+  height: 60px;
+  padding: 0;
+}
+
+
+
+@media (min-width: 768px) {
+  .menuButton {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    position: static;
+    height: auto;
+    width: auto;
+    background: none;
+  }
+  .list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+}

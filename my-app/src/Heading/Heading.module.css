@@ -1,0 +1,28 @@
+.HeadinSection{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  width: 100vw;
+  color: var(--font-SecondColor);
+  font-family: var(--font-family);
+  font-size: 20px;
+  height: 70px;
+  cursor: pointer;
+  padding: 30px;
+  z-index: 1;
+  position: absolute;
+}
+
+
+.mobileMenu{
+  width: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .HeadinSection h2{
+    margin: 0;
+  }
+}
+
